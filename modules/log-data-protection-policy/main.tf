@@ -10,7 +10,7 @@ module "cloudwatch_log-data-protection-policy" {
   findings_destination_firehose_delivery_stream = var.findings_destination_firehose_delivery_stream
   findings_destination_s3_bucket                = var.findings_destination_s3_bucket
   log_data_protection_description               = var.log_data_protection_description
-  log_data_protection_policy_name               = local.log_data_protection_policy_name
-  log_group_name                                = local.log_group_name
+  log_data_protection_policy_name               = var.log_data_protection_policy_name
+  log_group_name                                = var.log_group_name
   policy_document                               = var.policy_document
 }

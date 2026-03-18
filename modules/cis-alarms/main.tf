@@ -7,10 +7,10 @@ module "cloudwatch_cis-alarms" {
   create                    = var.create
   disabled_controls         = var.disabled_controls
   insufficient_data_actions = var.insufficient_data_actions
-  log_group_name            = local.log_group_name
-  name_prefix               = local.name_prefix
+  log_group_name            = var.log_group_name
+  name_prefix               = var.name_prefix
   namespace                 = var.namespace
   ok_actions                = var.ok_actions
-  tags                      = local.tags
+  tags                      = var.tags
   use_random_name_prefix    = var.use_random_name_prefix
 }

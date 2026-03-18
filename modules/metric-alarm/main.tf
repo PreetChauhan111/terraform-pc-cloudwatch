@@ -4,7 +4,7 @@ module "cloudwatch_metric-alarm" {
   actions_enabled                       = var.actions_enabled
   alarm_actions                         = var.alarm_actions
   alarm_description                     = var.alarm_description
-  alarm_name                            = local.alarm_name
+  alarm_name                            = var.alarm_name
   comparison_operator                   = var.comparison_operator
   create_metric_alarm                   = var.create_metric_alarm
   datapoints_to_alarm                   = var.datapoints_to_alarm
@@ -13,13 +13,13 @@ module "cloudwatch_metric-alarm" {
   evaluation_periods                    = var.evaluation_periods
   extended_statistic                    = var.extended_statistic
   insufficient_data_actions             = var.insufficient_data_actions
-  metric_name                           = local.metric_name
+  metric_name                           = var.metric_name
   metric_query                          = var.metric_query
-  namespace                             = local.namespace
+  namespace                             = var.namespace
   ok_actions                            = var.ok_actions
   period                                = var.period
   statistic                             = var.statistic
-  tags                                  = local.tags
+  tags                                  = var.tags
   threshold                             = var.threshold
   threshold_metric_id                   = var.threshold_metric_id
   treat_missing_data                    = var.treat_missing_data

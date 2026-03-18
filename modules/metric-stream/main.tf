@@ -5,10 +5,10 @@ module "cloudwatch_metric-stream" {
   exclude_filter           = var.exclude_filter
   firehose_arn             = var.firehose_arn
   include_filter           = var.include_filter
-  name                     = local.name
+  name                     = var.name
   name_prefix              = var.name_prefix
   output_format            = var.output_format
   role_arn                 = var.role_arn
   statistics_configuration = var.statistics_configuration
-  tags                     = local.tags
+  tags                     = var.tags
 }

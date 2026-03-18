@@ -5,7 +5,7 @@ module "cloudwatch_log-subscription-filter" {
   destination_arn = var.destination_arn
   distribution    = var.distribution
   filter_pattern  = var.filter_pattern
-  log_group_name  = local.log_group_name
-  name            = local.name
+  log_group_name  = var.log_group_name
+  name            = var.name
   role_arn        = var.role_arn
 }
