@@ -45,14 +45,3 @@ variable "kms_key_id" {
   type        = string
   default     = null
 }
-
-variable "region" {
-  type    = string
-  default = "ap-south-1"
-}
-
-variable "environment" {
-  description = "Deployment environment"
-  type        = string
-  default     = "dev"
-}

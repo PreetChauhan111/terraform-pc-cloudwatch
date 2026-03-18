@@ -69,14 +69,3 @@ variable "findings_destination_s3_bucket" {
   type        = string
   default     = null
 }
-
-variable "region" {
-  type    = string
-  default = "ap-south-1"
-}
-
-variable "environment" {
-  description = "Deployment environment"
-  type        = string
-  default     = "dev"
-}

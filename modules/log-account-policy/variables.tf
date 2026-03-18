@@ -87,19 +87,6 @@ variable "findings_destination_s3_bucket" {
   type        = string
   default     = null
 }
-
-variable "region" {
-  description = "AWS Region"
-  type        = string
-  default     = "ap-south-1"
-}
-
-variable "environment" {
-  description = "Deployment environment"
-  type        = string
-  default     = "dev"
-}
-
 variable "tags" {
   description = "A mapping of tags to assign to all resources"
   type        = map(string)

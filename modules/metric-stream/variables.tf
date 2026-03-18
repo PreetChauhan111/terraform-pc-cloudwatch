@@ -54,14 +54,3 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
-variable "region" {
-  description = "AWS region"
-  type        = string
-  default     = "ap-south-1"
-}
-
-variable "environment" {
-  description = "Deployment environment"
-  type        = string
-  default     = "dev"
-}

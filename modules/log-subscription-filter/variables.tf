@@ -39,14 +39,3 @@ variable "distribution" {
   type        = string
   default     = null
 }
-variable "region" {
-  description = "AWS region"
-  type        = string
-  default     = "ap-south-1"
-}
-
-variable "environment" {
-  description = "Deployment environment"
-  type        = string
-  default     = "dev"
-}
